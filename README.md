@@ -1,5 +1,8 @@
 # SHT3x
 ## Arduino library for Sensirion temperature and humidity sensors SHT30, SHT31 & SHT35.
+
+Original by Risele, changed to use I2Cdev by Kim Lilliestierna
+
 The heavy version.  
 Check for /examples for examples of different use cases.  
 
@@ -22,6 +25,7 @@ Do not forget about the UpdateData() method: this method polls sensors.
     Temperature data at Celsius, Kelvin and Fahrenheit scales.  
     Relative humidity data.  
     Absolute humidity data at Torr, mm Hg, Pa, bar, technical and standard atmosphere, psi scales.  
+		Dew point caclulation
     Data integrity (by CRC8 algorithm) (datasheet/section 4.12).  
     Temperature, relative and absolute humidity tolerances (in dependence from measured values)  
     Calibration (linear) of temperature and humidity data by factors or by reverse sensor values (2 points)  
